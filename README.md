@@ -64,8 +64,7 @@ All parameters and responses are as described in [bitstamp api official document
 
 * **getEthDepositAddresses(cb)**
 
-* **xrpWithdrawal(amount, address, destinationTag, 
-cb)**
+* **xrpWithdrawal(amount, address, destinationTag, cb)**
 
 * **getXrpDepositAddresses(cb)**
 
@@ -77,9 +76,9 @@ cb)**
 * **printError(error, printer)**
 
 
-##Exposed constants:
+## Exposed constants:
 
-###Bitstamp.TRANSACTIONS:
+#### Bitstamp.TRANSACTIONS:
 This is what bitstamp api returns for transaction type
 
  * DEPOSIT: 0
@@ -88,7 +87,7 @@ This is what bitstamp api returns for transaction type
  * TRANSFER: 14
 
 
-###Bitstamp.TRANSACTIONS:
+#### Bitstamp.TRANSACTIONS:
 This is what bitstamp api returns for order type
 
  * BUY: 0
@@ -96,7 +95,7 @@ This is what bitstamp api returns for order type
 
 
 
-##Example
+### Example
 
     let bitstampBTC = new Bitstamp(API_KEY, SECRET, CUSTOMER_ID, 'btceur');
     let bitstampETH = new Bitstamp(API_KEY, SECRET, CUSTOMER_ID, 'btceur');
