@@ -79,7 +79,7 @@ cb)**
 
 ##Exposed constants:
 
-####Bitstamp.TRANSACTIONS:
+###Bitstamp.TRANSACTIONS:
 This is what bitstamp api returns for transaction type
 
  * DEPOSIT: 0
@@ -88,7 +88,7 @@ This is what bitstamp api returns for transaction type
  * TRANSFER: 14
 
 
-####Bitstamp.TRANSACTIONS:
+###Bitstamp.TRANSACTIONS:
 This is what bitstamp api returns for order type
 
  * BUY: 0
