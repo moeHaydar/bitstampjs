@@ -1,0 +1,28 @@
+{
+  "name": "bitstampjs",
+  "version": "1.0.0",
+  "description": "A wrapper over bitstamps api",
+  "main": "src/bitstamp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/moeHaydar/bitstampjs.git"
+  },
+  "keywords": [
+    "bitstamp",
+    "api",
+    "eth",
+    "litcoin",
+    "bitcoin",
+    "ripple",
+    "xrp"
+  ],
+  "author": "Moe Haydar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moeHaydar/bitstampjs/issues"
+  },
+  "homepage": "https://github.com/moeHaydar/bitstampjs#readme"
+}
