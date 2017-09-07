@@ -95,7 +95,7 @@ This is what bitstamp api returns for order type
 
 
 
-### Example
+## Example
 
     let bitstampBTC = new Bitstamp(API_KEY, SECRET, CUSTOMER_ID, 'btceur');
     let bitstampETH = new Bitstamp(API_KEY, SECRET, CUSTOMER_ID, 'btceur');
