@@ -20,9 +20,36 @@ class Bitstamp {
       baseURL: 'https://www.bitstamp.net/api/',
       headers: {'Content-Type': 'application/x-www-form-urlencoded'}
     });
+  }
+
+  // Public apis
+  getTicker(cb) {
+    this.apiV2.get('ticker/' + this.currencyPair + '/')
+      then(response => {
+      cb(null, response.data)
+    })
+    .catch(cb);
    }
 
-   generateSignature(nonce) {
+
+   getHourlyTicker(cb) {
+    this.apiV2.get('ticker_hour/' + this.currencyPair + '/')
+      then(response => {
+      cb(null, response.data)
+    })
+    .catch(cb);
+   }
+
+   getHourlyTicker(cb) {
+    this.apiV2.get('order_book/' + this.currencyPair + '/')
+      then(response => {
+      cb(null, response.data)
+    })
+    .catch(cb);
+   }
+
+  // private apis
+  generateSignature(nonce) {
     const hash = crypto.createHmac('sha256', this.secret)
       .update(nonce + this.customerId + this.apiKey)
       .digest('hex');
@@ -37,7 +64,8 @@ class Bitstamp {
       now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds(), now.getUTCMilliseconds());
    }
 
-   getUserTransactions( cb, aggregated = []) {
+
+   getUserTransactions(cb, aggregated = []) {
     const LIMIT = 1000;
     let nonce = this.getNonce();
     let params = {
