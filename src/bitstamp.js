@@ -25,7 +25,7 @@ class Bitstamp {
   // Public apis
   getTicker(cb) {
     this.apiV2.get('ticker/' + this.currencyPair + '/')
-      then(response => {
+      .then(response => {
       cb(null, response.data)
     })
     .catch(cb);
@@ -34,7 +34,7 @@ class Bitstamp {
 
    getHourlyTicker(cb) {
     this.apiV2.get('ticker_hour/' + this.currencyPair + '/')
-      then(response => {
+      .then(response => {
       cb(null, response.data)
     })
     .catch(cb);
@@ -42,7 +42,7 @@ class Bitstamp {
 
    getHourlyTicker(cb) {
     this.apiV2.get('order_book/' + this.currencyPair + '/')
-      then(response => {
+      .then(response => {
       cb(null, response.data)
     })
     .catch(cb);
