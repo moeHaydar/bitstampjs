@@ -1,6 +1,6 @@
 {
   "name": "bitstampjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A wrapper over bitstamps api",
   "main": "src/bitstamp.js",
   "scripts": {
