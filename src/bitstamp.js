@@ -31,7 +31,6 @@ class Bitstamp {
     .catch(cb);
    }
 
-
    getHourlyTicker(cb) {
     this.apiV2.get('ticker_hour/' + this.currencyPair + '/')
       .then(response => {
@@ -40,7 +39,7 @@ class Bitstamp {
     .catch(cb);
    }
 
-   getHourlyTicker(cb) {
+   gerOrderBook(cb) {
     this.apiV2.get('order_book/' + this.currencyPair + '/')
       .then(response => {
       cb(null, response.data)
